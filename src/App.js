@@ -6,10 +6,11 @@ import Container from 'react-bootstrap/Container';
 
 function App(){
 
+  let colaboradores = require('./data.json');
   return (
     <Container>
       <Headers/>
-      <CustomForm/>
+      <CustomForm colaboradores={colaboradores} />
       <Footer/>
     </Container>
   );
